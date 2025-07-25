@@ -1,9 +1,11 @@
 import {getSession} from "@/lib/session";
+import {getProfile} from "@/lib/actions";
 
-const ProfilePage = () => {
+const ProfilePage = async () => {
+    const res = await getProfile();
     return(
         <div>
-            Profile
+            <p>{JSON.stringify(res)}</p>
         </div>
     )
 }
