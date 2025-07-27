@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/trident-monorepo.iml" filepath="$PROJECT_DIR$/.idea/trident-monorepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NestJS-NextJS-Authentication-Turborepo-main.iml" filepath="$PROJECT_DIR$/.idea/NestJS-NextJS-Authentication-Turborepo-main.iml" />
     </modules>
   </component>
 </project>

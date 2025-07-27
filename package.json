@@ -1,18 +1,18 @@
 {
-  "name": "trident-monorepo",
+  "name": "nest-next-auth",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
+    "@types/passport-google-oauth20": "^2.0.16",
     "@types/passport-jwt": "^4.0.1",
-    "prettier": "^3.6.2",
-    "turbo": "^2.5.5",
-    "typescript": "5.8.3"
+    "prettier": "^3.2.5",
+    "turbo": "^2.1.1",
+    "typescript": "^5.4.5"
   },
   "engines": {
     "node": ">=18"
@@ -23,10 +23,11 @@
     "packages/*"
   ],
   "dependencies": {
-    "@nestjs/config": "^4.0.2",
-    "@nestjs/jwt": "^11.0.0",
-    "jose": "^6.0.12",
+    "@nestjs/config": "^3.2.3",
+    "@nestjs/jwt": "^10.2.0",
+    "jose": "^5.8.0",
+    "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.1",
-    "zod": "^4.0.5"
+    "zod": "^3.23.8"
   }
 }

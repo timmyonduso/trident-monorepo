@@ -4,11 +4,11 @@ import { AppService } from './app.service';
 import { PrismaService } from './prisma/prisma.service';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
-import { PrismaModule } from './prisma/prisma.module';
-import {ConfigModule} from "@nestjs/config";
+import { ConfigModule } from '@nestjs/config';
+// import { GraphqlModule } from './graphql/graphql.module';
 
 @Module({
-  imports: [AuthModule, UserModule, PrismaModule, ConfigModule.forRoot({ isGlobal: true })],
+  imports: [AuthModule, UserModule, ConfigModule.forRoot({ isGlobal: true })],
   controllers: [AppController],
   providers: [AppService, PrismaService],
 })
